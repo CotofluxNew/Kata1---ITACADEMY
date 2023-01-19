@@ -49,11 +49,11 @@ class traduccioANumeroRomans{
     }
     public function calculInferior4(){
 
-        if($this->numeroEntrante >= 3){
+        if($this->numeroEntrante == 4){
             echo "IV";
 
         }else{
-            echo "Estoy en el else";
+            //echo "Estoy en el else";
             for($i=0; $i<$this->numeroEntrante; $i++){
                 echo "I";
             }
@@ -64,7 +64,7 @@ class traduccioANumeroRomans{
 }
 
 //Se trata de crear un programa que, dado un número entero(entre 1 y 3999) nos lo traduzca a numeración romana
-$numero = new traduccioANumeroRomans(3);
+$numero = new traduccioANumeroRomans(2);
 $numero->esEntero();
 echo $numero->determinaLongitudInput();
 //echo $numero->determinaLongitudInput(1000);
